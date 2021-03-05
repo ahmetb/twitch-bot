@@ -120,6 +120,7 @@ func turkVarMiReact() string {
 		`türk var kardeşim, madem türk'sün göster ürksün ` + mkFlag(5),
 		`VAR KARDEŞİM OTAĞI NEREYE KURUYORUZ YER GÖSTER ` + mkFlag(5),
 		mkFlag(5) + ` var kardeşim, VER MEHTERİ CcC ` + mkFlag(5),
+		`KEKebab`,
 	}
 	return v[rand.Intn(len((v)))]
 }
@@ -128,7 +129,7 @@ func abiTurkMusunReact() string {
 	v := []string{
 		mkFlag(2) + `evet türk olm sorup durmayın` + mkFlag(2),
 		`evet türk ne yapacan ` + mkFlag(2),
-		`evet türk ne yapacan, nikah mı kıycan `,
+		`evet türk ne yapacan, nikah mı kıycan? `,
 	}
 	return v[rand.Intn(len((v)))]
 }
