@@ -35,7 +35,10 @@ var (
 func main() {
 	client := twitch.NewClient(os.Getenv(`TWITCH_USER`), os.Getenv("TWITCH_TOKEN"))
 	client.Join(channel)
-
+	client.OnConnect(func() {
+		client.Say(channel, "hello everyone!"+mkFlag(5))
+		fmt.Println("connected.")
+	})
 	msgs := make(chan Msg)
 	client.OnPrivateMessage(onMsg(msgs))
 
