@@ -121,8 +121,14 @@ func turkVarMiReact() string {
 		`var niye lazim sana türk bulup napıcan ` + mkFlag(2),
 		`türk var kardeşim, nargile mi içmek istiyorsun beraber ` + mkFlag(3),
 		`türk var kardeşim, madem türk'sün göster ürksün ` + mkFlag(5),
-		`VAR KARDEŞİM OTAĞI NEREYE KURUYORUZ YER GÖSTER ` + mkFlag(5),
+		`var kardeşi̇m otağı nereye kuruyoruz yer göster ` + mkFlag(5),
 		mkFlag(5) + ` var kardeşim, VER MEHTERİ CcC ` + mkFlag(5),
+		`türk olmaz olur mu kardeşim her yerde türk var!` + mkFlag(1),
+		`bütün dünya dolaylı olarak türk olduğu için TÜRK VAR evet`,
+		`bütün dünya dolaylı olarak türk` + mkFlag(1) + ` olduğu için TÜRK VAR evet`,
+		`türk var hatta GÖKTÜRK bile var lan cCc` + mkFlag(1),
+		`"türk varmı diye sorulmadığı gün muhasız medeniyetler seviyesine erişmiş olacağız." --K.Atatürk`,
+		`"Beni chatte TÜRK VARMI diye soranlara emanet ediniz." - Kemal Ataturk`,
 	}
 	return v[rand.Intn(len((v)))]
 }
