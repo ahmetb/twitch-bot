@@ -117,6 +117,7 @@ func consume(client *twitch.Client, c <-chan Msg, react func() string) {
 func turkVarMiReact() string {
 	v := []string{
 		`var olm yeter sormayın artık`,
+		`var türk mnkym var`,
 		`var olm sorup durmayın` + mkFlag(2),
 		`var niye lazim sana türk bulup napıcan ` + mkFlag(2),
 		`türk var kardeşim, nargile mi içmek istiyorsun beraber ` + mkFlag(3),
@@ -129,6 +130,9 @@ func turkVarMiReact() string {
 		`türk var hatta GÖKTÜRK bile var lan cCc` + mkFlag(1),
 		`"türk varmı diye sorulmadığı gün muhasız medeniyetler seviyesine erişmiş olacağız." --K.Atatürk`,
 		`"Beni chatte TÜRK VARMI diye soranlara emanet ediniz." - Kemal Ataturk`,
+		`Türk yok kardeşim burda bütün Türkiye'ye nükleer bomba atılmış bi Türk sen kalmışsın.` + mkFlag(2),
+		`Türk yok ama GÖK TÜRK var, o olur mu?` + mkFlag(4),
+		`Türk yok ama ANADOLU SELÇUKLU var, o kurtarir mi?`,
 	}
 	return v[rand.Intn(len((v)))]
 }
@@ -137,7 +141,11 @@ func abiTurkMusunReact() string {
 	v := []string{
 		mkFlag(2) + `evet türk olm sorup durmayın` + mkFlag(2),
 		`evet türk ne yapacan ` + mkFlag(2),
+		`evet Hasan türk` + mkFlag(1) + ` ama asıl soru sen Türk müsün? Eğer öyleysen say bütün vergileri.`,
+		`millete türkmüsün diye soracağına sen türk müsün asıl`,
+		`Kendine türk'üm diyen türk'tür. -K.Atatürk` + mkFlag(4),
 		`evet türk ne yapacan, nikah mı kıycan `,
+		`evet adam türk ne yapacan, nüfüsüna mı geçiricen?`,
 	}
 	return v[rand.Intn(len((v)))]
 }
